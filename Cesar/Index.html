@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cesar</title> 
+	<link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <nav>
+        <a href="../Viggener/Index.html">Cifrado Vigenere</a>
+		<a href="https://www.twitch.tv/magicoso1412"><img src="img/twitch.png" width="20px" height="25px"></a>
+		<a href="https://www.youtube.com/channel/UC1P-eZ18paffqN1RlM4eFjQ"><img src="img/youtube.png" width="25px" height="25px"></a>
+		<a href="https://www.instagram.com/alexisshavez/"><img src="img/instragram.png" width="25px" height="25px"></a>
+    </nav>
+        <div class="main">
+        <h1>Cifrado Cesar</h1>
+            <p class="description">Este es un ejemplo del cifrado original cesar 
+                en el cual se usa un cambio en la posicion dentro del 
+                alfabeto de n lugares. Es necesario escribir un mensaje en el 
+                el cuadro de "mensaje de entrada" que aparece debajo y escribir la llave o la posicion para cifrar o
+                decifrar el mensaje.</p>
+                <div class="container"> 
+                    <h2>Mensaje de entrada:</h2>
+                    <textarea id="cadena" onkeypress="" onpaste="return false;" ondrop="return false;"></textarea>
+                    <p><input type="text" placeholder="Posicion o clave"  id="desplazamiento" onkeypress="" maxlength="8" onpaste="return false;" ondrop="return false;"></p>
+                    <p><input type="button" value="Cifrar" onclick="cifrar()">
+                    <input type="button" value="Descifrar" onclick="descifrar()">
+                
+                </p></div>
+                <p>
+                <h2>Mensaje de salida:</h2> 
+                <div id="resultado"></div>
+                </p>
+          </div>
+    <script src="js/cesar.js" ></script>
+</body>
+</html>

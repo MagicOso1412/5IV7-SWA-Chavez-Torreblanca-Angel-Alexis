@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Vigenere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/vigenere.js" ></script>
+</head>
+<body>
+    <nav>
+        <a href="../Cesar/Index.html">Cifrado Cesar</a>
+        <a href="https://www.twitch.tv/magicoso1412"><img src="img/twitch.png" width="20px" height="25px"></a>
+		<a href="https://www.youtube.com/channel/UC1P-eZ18paffqN1RlM4eFjQ"><img src="img/youtube.png" width="25px" height="25px"></a>
+		<a href="https://www.instagram.com/alexisshavez/"><img src="img/instragram.png" width="25px" height="25px"></a>
+    </nav>
+        <div class="main">
+        <h1>Cifrado Vigenere</h1>
+        <div class="row">
+            <p class="description">El cifrado Vigenère es un cifrado basado en diferentes series de caracteres o letras del cifrado César formando estos caracteres una tabla, llamada tabla de Vigenère, que se usa como clave. El cifrado de Vigenère es un cifrado polialfabético y de sustitución.</p>
+                <div class="container"> 
+                    <h2>Mensaje de entrada:</h2>
+                    <input type="text" placeholder="Mensaje de entrada"  id="mess" onkeypress="">
+                    <h2>Mensaje clave:</h2>
+                    <input type="text" placeholder="Mensaje clave"  id="llave" onkeypress="">
+                    <p>
+                    <input id="ci" type="button" value="Cifrar" onclick="">
+                    <input id="de" type="button" value="Descifrar" onclick="">
+                </div>
+                </p>
+                <p>
+                <h2>Mensaje de salida:</h2> 
+                <div id="rs"></div>
+                </p>
+          </div>
+        </div>
+           
+    
+
+    
+</body>
+</html>

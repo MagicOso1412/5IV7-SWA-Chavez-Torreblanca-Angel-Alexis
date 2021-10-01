@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+
+nav{
+    display: flex;
+    background-color: #8950B9;
+    align-items: center;
+    padding: 0;
+}
+
+nav a{
+    width: 50%;
+    font-family: 'Paytone One';
+	text-decoration: none;
+    text-align: center;
+    padding: 1.2rem;
+    color: #982224;
+    font-weight: bold;
+}
+
+
+nav a:hover{
+    background-color: #503467;
+	color: #F34D50;
+}
+
+p{font-family: 'Paytone One'}
+
+body{
+    margin-bottom: 3rem;
+    display: flex;
+    background-color: #F87375;
+    font-family: 'Paytone One';
+    color: black;
+}
+textarea{
+    background-color: #FFFFFF;
+    height: 2rem;
+    width: 50%;
+    border: 1px solid #0b132b;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #000000;
+    font-family: 'Paytone One';
+    font-weight: bold;
+}
+
+
+h2, h1{
+    color: white;
+    font-family: 'Paytone One';
+}
+
+.main{
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.description{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a{
+    
+    font-family: 'Paytone One';
+    font-weight: bold;
+}
+
+input{
+}
+
+input[type=text], input[type=number]{
+    background-color: #FFFFFF;
+    height: 2rem;
+    width: 50%;
+    border: 1px solid #0b132b;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #000000;
+    font-family: 'Paytone One';
+    font-weight: bold;
+}
+
+::placeholder{
+    color: #0b132b;
+}
+
+input[type=button]{
+    width: 30%;
+    height: 2.5rem;
+    border: 1px solid #0b132b;
+    background-color: #1c2541;
+    color: #FFFFFF;
+    font-family: 'Paytone One';
+}
+
+input[type=button]:hover{
+    background-color: #3a506b;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+input[type="number"] {
+-moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+-moz-appearance: number-input;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+@media (max-width:1000000px){
+    body{
+        display: block;
+    }
+    .main{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 3%;
+    }
+    
+    input[type=number], input[type=text]{
+        width: calc(100% - 3rem);
+    }
+    
+}
+
